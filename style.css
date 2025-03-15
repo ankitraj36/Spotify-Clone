@@ -1,0 +1,517 @@
+body{
+    overflow: hidden;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Montserrat", serif;
+ 
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar{
+   
+    width: 340px;
+ background-color: rgb(30, 30, 30);
+    border-radius: 1rem;
+
+}
+
+.main-content{
+    background-color: rgb(28, 29, 27);
+    flex: 1;
+    overflow: auto;
+    border-radius: 1rem;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music{
+    background-color: #121212;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem;
+}
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option i{
+    font-size: 1.20rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.lib{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-top: 8px;
+ 
+}
+
+
+.option{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.icons{
+    height: 1.5rem;
+  
+    display: flex;
+
+}
+
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+
+
+/* we are use box css */
+
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 1rem;
+
+    margin: 0.25rem 0 0.5rem 0;
+    padding: 1rem 1.25rem;
+}
+
+.box-b1{
+    height: 1rem;
+    font-weight: 700;
+}
+
+.box-b2{
+    
+    height: 0.75rem;
+    opacity: 0.9;
+}
+
+.badge{
+    /* background-color: #fff;
+    border-radius: 100px;
+    border: none;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    color: black;
+    margin: 2.5rem;
+    height: 1.25rem;
+    width: fit-content;
+    justify-content: center;
+    text-align: center;
+    align-items: center; */
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1rem;
+    margin: 1rem;
+    height: auto;
+    width: fit-content;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(110, 142, 251, 0.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+
+.badge:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(110, 142, 251, 0.4);
+}
+.badge:active{
+    transform: scale(0.98);
+    box-shadow: 0 2px 10px rgba(110, 142, 251, 0.2);
+}
+.badge:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+
+
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: #121212;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+
+    /* z-index: 10; */
+}
+.sticky-nav-icon{
+    height: 2rem;
+    margin-left: 1.8rem;
+}
+
+.sticky-download-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    margin-right: 1rem;
+}
+
+
+@media (max-width: 1000px) {
+    .hide{
+            display: none;
+    }
+    
+}
+
+.card{
+    background-color: #232323;
+    width: 150px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+  
+
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+
+}
+
+.card-title{
+    font-weight: 600;
+
+}
+
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    border-top: 1px solid white;
+    opacity: 0.4;
+    width: 90%;
+    height: 50%;
+}
+
+
+.music{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.album{
+    width: 25%;
+
+}
+.player{
+    width: 50%;
+}
+
+.control{
+    width: 25%;
+}
+.player-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player-icon{
+   height: 1.5rem;
+   margin-right: 1.69rem;
+   opacity: 0.699;
+}
+
+.player-icon:hover{
+    opacity: 1;
+}
+.playback-bar{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar {
+    -webkit-appearance: none; /* Removes default styling */
+    appearance: none;
+    width: 40%;
+    height: 6px;
+    background: #444; /* Background of the track */
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s;
+}
+
+/* Track (the line where the thumb moves) */
+.progress-bar::-webkit-slider-runnable-track {
+    background: #1DB954; /* Spotify green */
+    height: 6px;
+    border-radius: 5px;
+}
+
+/* Thumb (the draggable part) */
+.progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -4px; /* Align with track */
+}
+
+/* Firefox */
+.progress-bar::-moz-range-track {
+    background: #1DB954;
+    height: 6px;
+    border-radius: 5px;
+}
+
+.progress-bar::-moz-range-thumb {
+    background: white;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* 
+.footer {
+    background: #181818;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.footer .line {
+    width: 80%;
+    height: 2px;
+    background: #1DB954;
+    margin: auto;
+    opacity: 0.7;
+}
+.footer .social-icons {
+    margin: 10px 0;
+}
+.footer .social-icons a {
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+.footer .social-icons a:hover {
+    color: #1DB954;
+}
+
+    /* Footer Styling - Dark Theme */
+    .footer {
+        margin-top: 1rem;
+        background: #121212;
+        color: #b3b3b3;
+        text-align: center;
+        padding: 20px 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Social Buttons */
+    .footer .container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .footer button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease-in-out;
+    }
+
+    /* Social Media Colors */
+    .facebook { background-color: #4267B2; }
+    .youtube { background-color: #FF0000; }
+    .instagram { background-color: #C13584; }
+    .twitter { background-color: #1DA1F2; }
+
+    .footer button:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+
+    /* Icons */
+    .footer button svg {
+        width: 24px;
+        height: 24px;
+        fill: white;
+    }
+
+    /* Copyright Section */
+    .footer .copyright {
+        background-color: #181818;
+        padding: 10px 0;
+        font-size: 14px;
+        font-weight: bold;
+        color: #b3b3b3;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .footer .container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+       /* Footer Styling - Dark Theme */
+       .footer {
+        background: #121212;
+        color: #b3b3b3;
+        text-align: center;
+        padding: 20px 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Social Buttons */
+    .footer .container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .footer button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+
+    /* Social Media Colors */
+    .facebook { background-color: #4267B2; }
+    .youtube { background-color: #FF0000; }
+    .instagram { background-color: #C13584; }
+    .twitter { background-color: #1DA1F2; }
+
+    .footer button:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+
+    /* Copyright Section */
+    .footer .copyright {
+        background-color: #181818;
+        padding: 10px 0;
+        font-size: 14px;
+        font-weight: bold;
+        color: #b3b3b3;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .footer .container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+    /* Copyright Section */
+.footer .copyright {
+    background-color: #181818;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.footer .copyright strong {
+    font-weight: 700;
+    color: white;
+}
